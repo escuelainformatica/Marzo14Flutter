@@ -18,3 +18,30 @@
   final mapa={"Nombre":"John","Apellido":"Doe"};
   mapa["Nombre"]="Bob"; // si es valido.
 ```
+
+## herencia 1
+
+```dart
+class Persona {
+  String? rut;
+  String? nombre;
+
+  mostrar() {
+    print("rut: $rut   nombre:$nombre");
+  }
+}
+
+
+// agregando herencia.
+class Cliente extends Persona {
+  int? deuda;
+  bool? premium;
+
+  @override
+  mostrar() {
+    print("rut: $rut   nombre:$nombre deuda:$deuda premium:$premium");
+  }
+}
+
+
+```
