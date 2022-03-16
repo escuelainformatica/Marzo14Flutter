@@ -1,9 +1,9 @@
 # Clase 14 de Marzo
 
-- [ ] definiciones adicionales de variables
+- [X] definiciones adicionales de variables
 - [ ] control de errores
-- [ ] anotaciones
-- [ ] herencias
+- [X] anotaciones
+- [X] herencias
 
 ## definiciones adicionales de variables
 
