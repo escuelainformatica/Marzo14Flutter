@@ -6,6 +6,8 @@ class Persona {
     print("rut: $rut   nombre:$nombre");
   }
 }
+
+
 class Empleado extends Persona {
   int? salario;
 }

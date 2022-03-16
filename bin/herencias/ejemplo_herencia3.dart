@@ -6,7 +6,9 @@ class Persona {
     print("rut: $rut   nombre:$nombre");
   }
 }
-class Contacto {
+// abstractra, es una clase que no se puede usar directamente.
+
+abstract class Contacto {
   String? correo;
   String? telefono;
 }
@@ -42,6 +44,10 @@ main() {
   var emp=Empleado("1111-1","john","aaa@bbb.com","555-234563");
   // enviarCorreo(emp); no es valido
   // mostrarRut(emp); no es valido
+
+  //var contacto=Contacto(); no es valido, porque contacto es abstracto.
+  //contacto.correo="aaaa@aaa.com";
+  //contacto.telefono="55555-3333";
 }
 
 enviarCorreo(Contacto contacto) {

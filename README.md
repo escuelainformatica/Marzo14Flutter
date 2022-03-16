@@ -19,7 +19,9 @@
   mapa["Nombre"]="Bob"; // si es valido.
 ```
 
-## herencia 1
+## herencia extends
+
+> Solo se puede extender de una clase
 
 ```dart
 class Persona {
@@ -45,3 +47,49 @@ class Cliente extends Persona {
 
 
 ```
+
+## Herencia: implementar
+
+> se puede implementar de una o mas clases o mixin
+
+```dart
+class Persona {
+  String? nombre;
+}
+class Cliente implements Persona {
+  String? nombre;
+}
+
+```
+
+
+## Herencia: abstract
+
+> Cuando se tiene una clase abstracta, es una clase que solamente puedo ocupar para
+> extenderla o implementarla.
+> Una clase abstracta no la puedo usar directamente.
+
+```dart
+
+abstract class Clase1 {
+  
+}
+class Clase2 extends Clase1 { // es valido.
+  
+}
+class Clase2 implements Clase1 { // es valido.
+
+}
+
+main() {
+  var obj=Clase1(); // no se puede hacer.
+}
+
+
+```
+
+## Herencia Mixin
+
+> Son iguales que una clase abstracta, pero no pueden extenderse o tienen constructor.
+> Mixin, por lo tanto se usa para implementar.
+
