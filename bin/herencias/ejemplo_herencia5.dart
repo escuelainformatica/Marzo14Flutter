@@ -20,7 +20,9 @@ mixin Puertas {
 }
 
 class Sedan extends Vehiculo implements Electrico,Puertas {
+  @override
   int puertas;
+  @override
   int consumoElectrico;
   Sedan(this.consumoElectrico,this.puertas, patente) : super(patente); // llamando al constructor Vehiculo original.
 }
